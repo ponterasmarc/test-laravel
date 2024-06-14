@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* body {
+    font-family: Roboto;
+}
+
+form {
+    padding: 0;
+    margin: 0;
+    height: auto;
+}
+
+a,
+button {
+    display: inline-block !important;
+    padding: 3px 15px !important;
+    border-radius: 7px !important;
+    text-decoration: none !important;
+    margin: 0 0 0 7px !important;
+}
+
+.custom-container {
+    max-width: 1140px;
+    margin: auto;
+    padding: 10px;
+}
+
+
+.note-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.note-list .head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    align-items: center;
+}
+.note-list .head .note-actions {
+    display: flex;
+}
+.note-list .note-item {
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 500px;
+    margin: 7px;
+    border-radius: 7px;
+    background-color: #fff;
+}
+
+.note-item:last-child {
+    border-bottom: none;
+}
+
+.note-content {
+    margin-bottom: 10px;
+}
+
+.note-content h3 {
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.note-actions {
+    text-align: right;
+}
+
+.note-actions button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-view {
+    background-color: #337ab7;
+    color: #fff;
+}
+
+.btn-view:hover {
+    background-color: #23527c;
+}
+
+.btn-edit {
+    background-color: #8bc34a;
+    color: #fff;
+}
+
+.btn-edit:hover {
+    background-color: #689f38;
+}
+
+.btn-delete {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.btn-delete:hover {
+    background-color: #c0392b;
+}
+
+
+.add-note-form {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-note-form h2 {
+    margin-top: 0;
+    font-weight: bold;
+    color: #333;
+}
+
+.add-note-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.add-note-form input[type="text"],
+.add-note-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+.add-note-form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.add-note-form button[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-note-form button[type="submit"]:hover {
+    background-color: #3e8e41;
+} */
