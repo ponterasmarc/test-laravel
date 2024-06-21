@@ -2,24 +2,23 @@
     <div class="container mx-auto px-4">
         <a href="{{ route('note.create') }}" class="w-full bg-sky-400 block rounded-lg p-2 my-4 text-neutral-50 text-center">New Note</a>
        
-        <ul class="flex flex-wrap content-around">
+        <ul class="flex flex-wrap">
             @foreach ($notes as $note)
-            <li class="p-7 m-2 w-60 bg-sky-50 border border-zinc-300">
+            <li class="p-6 mr-2 w-fit bg-sky-50 border border-zinc-300 rounded-lg">
                 <div class="note-content">
                     <div class="head">
-                        <h3>Time: {{$note->created_at}}</h3>
-                        <div class="flex justify-between">
-                            <a href="{{ route('note.show', $note) }}" class="p-2 bg-blue-400 rounded-lg my-2">View</a>
-                            <a href="{{ route('note.edit', $note) }}" class="p-2  bg-green-400 rounded-lg my-2">Edit</a>
-                
+                        <h3 class="text-lg">Time: {{$note->created_at}}</h3>
+                        <p class="mt-2 mb-2">{{Str::words($note->note, 30)}}</p>
+                        <div class="flex justify-between align-center ">
+                            <a href="{{ route('note.show', $note) }}" class="px-4 py-1 bg-sky-600 text-white rounded-lg">View</a>
+                            <a href="{{ route('note.edit', $note) }}" class="px-4 py-1 bg-lime-600 text-white rounded-lg">Edit</a>
                             <form action="{{route('note.destroy', $note)}}" method="POST">
                                 @csrf
                                 @method('DELETE')
-                                <button class="p-2 bg-red-400 rounded-lg my-2">Delete</button>
+                                <button class="px-4 py-1 bg-rose-600 text-white rounded-lg">Delete</button>
                             </form>
                         </div>
                     </div>
-                    <p>{{Str::words($note->note, 30)}}</p>
                 </div>
             </li>
             @endforeach
