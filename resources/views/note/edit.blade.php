@@ -1,5 +1,5 @@
 <x-app-layout>
-    <div class="add-note-form">
+   
         <h2>Edit Note</h2>
         <form action=" {{ route('note.update', $note)}} " method="POST">
           @csrf
@@ -11,5 +11,5 @@
           <button type="submit">Add Note</button>
           <a href="{{ route('note.index')}} "></a>
         </form>
-      </div>
+      
 </x-app-layout>

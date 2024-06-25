@@ -1,7 +1,7 @@
 <x-app-layout>
-    <div class="container mx-auto px-4">
+
         <a href="{{ route('note.create') }}" class="w-full bg-sky-400 block rounded-lg p-2 my-4 text-neutral-50 text-center">New Note</a>
-       
+
         <ul class="flex flex-wrap">
             @foreach ($notes as $note)
             <li class="p-6 mr-2 w-fit bg-sky-50 border border-zinc-300 rounded-lg">
@@ -23,10 +23,10 @@
             </li>
             @endforeach
         </ul>
-    
+
         {{$notes -> links()}}
-        </div> 
-   
+
+
 </x-app-layout>
 
 
